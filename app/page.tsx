@@ -1,309 +1,319 @@
 const services = [
   {
     number: "01",
-    title: "Individual Therapy",
+    title: "Anxiety & Panic",
     description:
-      "A supportive space to explore your thoughts, understand your emotions, and work toward meaningful change.",
+      "Understand the patterns behind worry, panic, and constant tension. Build practical tools to feel more grounded and present.",
   },
   {
     number: "02",
-    title: "Anxiety Support",
+    title: "Trauma & Healing",
     description:
-      "Build a better understanding of anxiety and discover practical ways to navigate life's challenges.",
+      "Explore the impact of past experiences at a pace that feels safe, with care for emotional well-being and nervous system regulation.",
   },
   {
     number: "03",
-    title: "Personal Growth",
+    title: "Burnout & Perfectionism",
     description:
-      "Explore your needs, strengthen self-awareness, and move toward a life that feels more aligned with you.",
+      "Make space beyond achievement and pressure. Develop healthier boundaries, reconnect with yourself, and find a more sustainable rhythm.",
   },
 ];
 
-const imageStyle = {
-  backgroundImage:
-    "url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85')",
-};
+const faqs = [
+  {
+    question: "Who do you work with?",
+    answer:
+      "I work with adults experiencing anxiety, panic, trauma, stress, professional burnout, perfectionism, and the effects of difficult past experiences.",
+  },
+  {
+    question: "What approaches do you use?",
+    answer:
+      "My approach integrates cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques, tailored to your needs.",
+  },
+  {
+    question: "Do you offer online therapy?",
+    answer:
+      "Yes. I offer in-person therapy at my Santa Monica office and secure telehealth sessions for clients located in California.",
+  },
+  {
+    question: "What can I expect from therapy?",
+    answer:
+      "Sessions are warm and collaborative, with structure when helpful and room for deeper reflection. We work together at a pace that respects your needs.",
+  },
+];
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f7f5ef] text-[#263d35]">
-      {/* Navigation */}
-      <header className="border-b border-[#263d35]/10">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
-          <a href="#" className="text-xl font-semibold tracking-tight">
-            Maya Reynolds<span className="text-[#b47b5b]">.</span>
-            <span className="mt-1 block text-[10px] uppercase tracking-[0.25em] text-[#69776c]">
-              Therapy & Wellbeing
-            </span>
-          </a>
+    <main className="overflow-hidden bg-[#faf8f4] text-[#293b32]">
+      <div className="bg-[#293b32] px-4 py-2 text-center text-xs tracking-wide text-white sm:text-sm">
+        In-person therapy in Santa Monica · Secure telehealth across California
+      </div>
 
-          <div className="hidden items-center gap-8 text-sm md:flex">
-            <a href="#about" className="hover:text-[#b47b5b]">About</a>
-            <a href="#services" className="hover:text-[#b47b5b]">Services</a>
-            <a href="#office" className="hover:text-[#b47b5b]">Our Office</a>
-            <a href="#faq" className="hover:text-[#b47b5b]">FAQs</a>
-          </div>
-
-          <a
-            href="#contact"
-            className="rounded-full bg-[#344e41] px-5 py-3 text-sm text-white transition hover:bg-[#24392f]"
-          >
-            Get in Touch ↗
+      <header className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
+        <a href="#" className="text-lg font-semibold tracking-tight sm:text-xl">
+          Maya Reynolds, PsyD
+          <span className="mt-1 block text-[10px] font-normal uppercase tracking-[0.24em] text-[#8a755d]">
+            Clinical Psychology
+          </span>
+        </a>
+        <nav className="hidden items-center gap-7 text-sm md:flex">
+          <a href="#about" className="hover:text-[#a36e4d]">About</a>
+          <a href="#services" className="hover:text-[#a36e4d]">How I Help</a>
+          <a href="#office" className="hover:text-[#a36e4d]">The Office</a>
+          <a href="#faq" className="hover:text-[#a36e4d]">FAQs</a>
+          <a href="#contact" className="rounded-full bg-[#293b32] px-5 py-3 text-white hover:bg-[#40594a]">
+            Get in Touch
           </a>
         </nav>
+        <a href="#contact" className="rounded-full bg-[#293b32] px-4 py-2.5 text-sm text-white md:hidden">
+          Contact
+        </a>
       </header>
 
-      {/* Hero */}
-      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24 lg:px-10">
-        <div>
-          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-[#a66e50]">
-            A space to feel understood
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-10 sm:px-8 md:grid-cols-2 md:pb-28 md:pt-16">
+        <div className="max-w-xl">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#a36e4d]">
+            A thoughtful space for healing
           </p>
-
-          <h1 className="max-w-xl text-5xl font-medium leading-[1.12] tracking-tight md:text-6xl lg:text-7xl">
-            You deserve a life that feels more like <span className="font-serif italic text-[#a66e50]">you.</span>
+          <h1 className="text-4xl font-normal leading-[1.12] tracking-tight sm:text-5xl lg:text-6xl">
+            You don’t have to hold it all together{" "}
+            <span className="font-serif italic text-[#a36e4d]">
+              on your own.
+            </span>
           </h1>
-
-          <p className="mt-7 max-w-lg text-base leading-8 text-[#68766c] md:text-lg">
-            Therapy offers a space to slow down, explore what matters, and
-            find a more meaningful way forward. You don't have to figure
-            everything out on your own.
+          <p className="mt-6 max-w-lg text-base leading-8 text-[#626a61] sm:text-lg">
+            Therapy for anxiety, trauma, and burnout. Find space to slow down,
+            understand yourself, and move toward a more grounded life.
           </p>
-
-          <div className="mt-9 flex flex-wrap gap-4">
-            <a
-              href="#contact"
-              className="rounded-full bg-[#344e41] px-7 py-4 text-sm text-white transition hover:bg-[#24392f]"
-            >
-              Start a Conversation ↗
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#contact" className="rounded-full bg-[#293b32] px-7 py-4 text-sm text-white transition hover:bg-[#40594a]">
+              Explore Working Together <span aria-hidden="true">↗</span>
             </a>
-            <a
-              href="#about"
-              className="rounded-full border border-[#344e41]/30 px-7 py-4 text-sm transition hover:bg-white"
-            >
-              Meet Your Therapist
+            <a href="#about" className="text-sm underline underline-offset-4">
+              Meet Dr. Maya
             </a>
           </div>
-
-          <div className="mt-12 flex items-center gap-4 border-t border-[#263d35]/15 pt-6">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#e7dfd1] font-serif text-xl">
-              M
-            </div>
-            <div>
-              <p className="font-medium">Dr. Maya Reynolds</p>
-              <p className="mt-1 text-sm text-[#68766c]">
-                A thoughtful approach to wellbeing
-              </p>
-            </div>
-          </div>
+          <p className="mt-8 text-sm text-[#73786f]">
+            Licensed Clinical Psychologist · Santa Monica, California
+          </p>
         </div>
-
         <div className="relative">
-          <div
-            role="img"
-            aria-label="A peaceful, naturally lit interior"
-            className="min-h-[420px] rounded-t-[48%] rounded-b-[12px] bg-cover bg-center md:min-h-[590px]"
-            style={imageStyle}
+          <div className="absolute -bottom-5 -left-5 h-2/3 w-2/3 rounded-t-full bg-[#e9e1d5]" />
+          <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85"
+            alt="Warm, natural-light interior with comfortable seating"
+            className="relative h-[390px] w-full rounded-t-[48%] object-cover sm:h-[510px]"
           />
-          <div className="absolute bottom-6 left-0 max-w-[245px] rounded-2xl bg-[#f7f5ef] p-5 shadow-lg md:-left-8">
-            <span className="text-2xl text-[#a66e50]">✳</span>
-            <p className="mt-2 font-serif text-xl">Space to pause.</p>
-            <p className="mt-1 text-sm leading-6 text-[#68766c]">
-              Time to reflect, reconnect, and grow at your own pace.
+          <div className="absolute bottom-5 right-4 max-w-[220px] rounded-2xl bg-[#faf8f4] p-4 shadow-lg sm:bottom-8 sm:right-[-12px]">
+            <p className="font-serif text-lg italic">A place to exhale.</p>
+            <p className="mt-1 text-xs leading-5 text-[#73786f]">
+              Care that meets you with warmth, respect, and understanding.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Introduction */}
-      <section id="about" className="bg-[#e9e8dd] px-6 py-20 md:py-28">
-        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.7fr_1.3fr] md:gap-20">
+      <section className="bg-[#eee9df] px-5 py-12 sm:px-8">
+        <div className="mx-auto grid max-w-6xl gap-8 text-center sm:grid-cols-3">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#a66e50]">
-              A little about me
-            </p>
-            <h2 className="mt-5 font-serif text-4xl leading-tight md:text-5xl">
-              Your story deserves to be heard.
-            </h2>
+            <p className="font-serif text-xl">Anxiety & Panic</p>
+            <p className="mt-2 text-sm text-[#626a61]">Less overwhelm, more steadiness</p>
           </div>
           <div>
-            <p className="text-lg leading-8 text-[#536458]">
-              Taking the first step toward therapy can feel unfamiliar.
-              My goal is to create a welcoming space where you can talk
-              openly, feel heard, and explore the experiences that shape
-              your life.
-            </p>
-            <p className="mt-5 leading-8 text-[#536458]">
-              Together, we can work toward greater self-understanding,
-              explore new perspectives, and identify steps that feel right
-              for you.
-            </p>
-            <a
-              href="#contact"
-              className="mt-7 inline-flex border-b border-[#344e41] pb-2 text-sm font-medium"
-            >
-              Let's connect ↗
-            </a>
+            <p className="font-serif text-xl">Trauma-Informed Care</p>
+            <p className="mt-2 text-sm text-[#626a61]">Safety, stabilization, and healing</p>
+          </div>
+          <div>
+            <p className="font-serif text-xl">Burnout & Perfectionism</p>
+            <p className="mt-2 text-sm text-[#626a61]">A more sustainable way forward</p>
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section id="services" className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-10">
+      <section id="services" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-28">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#a66e50]">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#a36e4d]">
             How I can help
           </p>
-          <h2 className="mt-5 font-serif text-4xl md:text-5xl">
-            Support that starts with you.
+          <h2 className="mt-4 text-3xl font-normal sm:text-5xl">
+            Support for what you’re carrying.
           </h2>
-          <p className="mt-5 leading-7 text-[#68766c]">
-            Everyone's journey is different. Our work begins with
-            understanding your needs and what you hope to change.
+          <p className="mt-5 leading-7 text-[#626a61]">
+            You may look capable on the outside while feeling exhausted within.
+            Therapy offers space to understand what is happening and find a way
+            forward that feels right for you.
           </p>
         </div>
-
-        <div className="mt-14 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
           {services.map((service) => (
-            <article
-              key={service.number}
-              className="rounded-2xl border border-[#344e41]/15 bg-white/60 p-8 transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <span className="text-sm text-[#a66e50]">{service.number}</span>
-              <h3 className="mt-7 font-serif text-2xl">{service.title}</h3>
-              <p className="mt-4 leading-7 text-[#68766c]">
+            <article key={service.number} className="rounded-2xl border border-[#e5dfd4] bg-white/60 p-7 sm:p-9">
+              <span className="text-sm text-[#a36e4d]">{service.number}</span>
+              <h3 className="mt-8 font-serif text-2xl">{service.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-[#626a61]">
                 {service.description}
               </p>
-              <a
-                href="#contact"
-                className="mt-7 inline-block text-sm font-medium"
-              >
-                Learn more ↗
+              <a href="#contact" className="mt-7 inline-block text-sm underline underline-offset-4">
+                Learn about working together →
               </a>
             </article>
           ))}
         </div>
       </section>
 
-      {/* Our Office - New custom section */}
-      <section id="office" className="bg-[#344e41] px-6 py-20 text-[#f7f5ef] md:py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
-          <div
-            role="img"
-            aria-label="A calm and inviting interior space"
-            className="min-h-[350px] rounded-2xl bg-cover bg-center md:min-h-[480px]"
-            style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85')",
-            }}
-          />
-          <div className="md:pl-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#e0b797]">
-              Our Office
+      <section id="about" className="bg-[#e8e9df] px-5 py-20 sm:px-8 md:py-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2 md:gap-20">
+          <div className="overflow-hidden rounded-t-[48%]">
+            <img
+              src="/maya-headshot.png"
+              alt="Dr. Maya Reynolds, PsyD"
+              className="h-[400px] w-full object-cover sm:h-[520px]"
+            />
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#a36e4d]">
+              A little about me
             </p>
-            <h2 className="mt-5 font-serif text-4xl leading-tight md:text-5xl">
-              A calmer place to begin.
+            <h2 className="mt-4 text-3xl font-normal leading-tight sm:text-5xl">
+              Therapy that makes room for the whole of you.
             </h2>
-            <p className="mt-6 leading-8 text-white/75">
-              The environment around us can help us slow down and feel
-              more at ease. This space is designed to feel warm, welcoming,
-              and comfortable—a place where you can focus on yourself
-              without unnecessary distractions.
+            <p className="mt-6 leading-8 text-[#626a61]">
+              I’m Dr. Maya Reynolds, a licensed clinical psychologist in Santa
+              Monica, California. I work with adults who are navigating anxiety,
+              panic, trauma, and professional burnout—even when life looks
+              perfectly manageable from the outside.
             </p>
-            <p className="mt-5 leading-8 text-white/75">
-              Whether you're taking your first step or continuing your
-              journey, you deserve to feel respected and supported.
+            <p className="mt-4 leading-8 text-[#626a61]">
+              My approach is warm, collaborative, and grounded in evidence-based
+              care. Together, we can explore patterns, build practical skills,
+              and work toward a deeper understanding of your experiences.
             </p>
-            <a
-              href="#contact"
-              className="mt-8 inline-block rounded-full bg-[#f7f5ef] px-7 py-4 text-sm font-medium text-[#344e41] transition hover:bg-white"
-            >
-              Ask About Sessions ↗
+            <p className="mt-4 leading-8 text-[#626a61]">
+              I believe therapy should offer both useful tools and space for
+              meaningful reflection, with safety and your pace at the center.
+            </p>
+            <a href="#contact" className="mt-7 inline-block rounded-full bg-[#293b32] px-6 py-3.5 text-sm text-white hover:bg-[#40594a]">
+              Let’s Connect →
             </a>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-4xl px-6 py-20 md:py-28">
-        <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#a66e50]">
-            Frequently asked questions
-          </p>
-          <h2 className="mt-5 font-serif text-4xl md:text-5xl">
-            Before we begin.
-          </h2>
-        </div>
-
-        <div className="mt-12 divide-y divide-[#263d35]/15">
-          <details className="group py-6" open>
-            <summary className="cursor-pointer list-none font-medium">
-              What can I expect from a first session?
-              <span className="float-right text-[#a66e50]">+</span>
-            </summary>
-            <p className="mt-4 max-w-2xl leading-7 text-[#68766c]">
-              A first conversation is an opportunity to discuss what brings
-              you to therapy, ask questions, and explore whether working
-              together feels like a good fit.
+      <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-28">
+        <div className="grid gap-12 md:grid-cols-2 md:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#a36e4d]">
+              My approach
             </p>
-          </details>
-
-          <details className="group py-6">
-            <summary className="cursor-pointer list-none font-medium">
-              Is therapy a space where I can speak openly?
-              <span className="float-right text-[#a66e50]">+</span>
-            </summary>
-            <p className="mt-4 leading-7 text-[#68766c]">
-              Therapy is intended to offer a respectful, supportive
-              environment. Your therapist can explain confidentiality
-              and its limits before you begin.
+            <h2 className="mt-4 text-3xl leading-tight sm:text-5xl">
+              Practical tools. Deeper understanding.
+            </h2>
+            <p className="mt-5 leading-8 text-[#626a61]">
+              Therapy is not one-size-fits-all. Our work is shaped around your
+              experiences, needs, and goals, combining structure with room to
+              reflect and discover.
             </p>
-          </details>
-
-          <details className="group py-6">
-            <summary className="cursor-pointer list-none font-medium">
-              How do I find out whether we're a good fit?
-              <span className="float-right text-[#a66e50]">+</span>
-            </summary>
-            <p className="mt-4 leading-7 text-[#68766c]">
-              You can start by discussing your needs, goals, and questions.
-              It's important to feel comfortable with your therapist's
-              approach and experience.
-            </p>
-          </details>
+          </div>
+          <div className="space-y-0">
+            {[
+              ["Cognitive-Behavioral Therapy (CBT)", "Explore the connection between thoughts, emotions, and behaviors."],
+              ["EMDR", "A trauma-focused approach used as appropriate to your needs and readiness."],
+              ["Mindfulness-Based Practices", "Build awareness of the present moment with less judgment."],
+              ["Body-Oriented Techniques", "Pay attention to the body's responses as part of emotional well-being."],
+            ].map(([title, description]) => (
+              <div key={title} className="border-b border-[#ded8cd] py-5">
+                <h3 className="font-medium">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#626a61]">{description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="px-6 pb-20">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-[#e9e8dd] px-7 py-14 text-center md:px-16 md:py-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#a66e50]">
-            Your next chapter
+      <section id="office" className="bg-[#293b32] px-5 py-20 text-white sm:px-8 md:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#d9b899]">
+              Your space to feel at ease
+            </p>
+            <h2 className="mt-4 text-3xl sm:text-5xl">A calm place to begin.</h2>
+            <p className="mt-5 leading-8 text-white/75">
+              My Santa Monica office is designed to feel quiet, private, and
+              grounding, with natural light and a comfortable, uncluttered
+              environment. You deserve a space where you can arrive as you are.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            <img
+              src="/office1.jpeg"
+              alt="Therapy office interior"
+              className="h-72 w-full rounded-2xl object-cover sm:h-96"
+            />
+            <img
+              src="/office2.jpeg"
+              alt="Comfortable and welcoming office space"
+              className="h-72 w-full rounded-2xl object-cover sm:h-96"
+            />
+          </div>
+          <div className="mt-8 text-center">
+            <p className="font-medium">123th Street 45 W, Santa Monica, CA 90401</p>
+            <p className="mt-2 text-sm text-white/70">
+              In-person appointments · Secure telehealth throughout California
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" className="mx-auto max-w-4xl px-5 py-20 sm:px-8 md:py-28">
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#a36e4d]">
+            Good to know
           </p>
-          <h2 className="mx-auto mt-5 max-w-2xl font-serif text-4xl leading-tight md:text-5xl">
-            You don't have to navigate everything alone.
+          <h2 className="mt-4 text-3xl sm:text-5xl">Frequently asked questions</h2>
+        </div>
+        <div className="mt-10">
+          {faqs.map((faq) => (
+            <details key={faq.question} className="group border-b border-[#ded8cd] py-5">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium">
+                {faq.question}
+                <span className="text-xl text-[#a36e4d] group-open:rotate-45">+</span>
+              </summary>
+              <p className="mt-4 pr-5 text-sm leading-7 text-[#626a61]">
+                {faq.answer}
+              </p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" className="px-5 pb-20 sm:px-8 md:pb-28">
+        <div className="mx-auto max-w-5xl rounded-3xl bg-[#eee9df] px-6 py-12 text-center sm:px-12 sm:py-16">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#a36e4d]">
+            Take the first step
+          </p>
+          <h2 className="mx-auto mt-4 max-w-2xl text-3xl leading-tight sm:text-5xl">
+            You don’t have to figure everything out today.
           </h2>
-          <p className="mx-auto mt-5 max-w-xl leading-7 text-[#68766c]">
-            Taking the first step can be simple. Reach out to learn more
-            about therapy and the next steps.
+          <p className="mx-auto mt-5 max-w-xl leading-7 text-[#626a61]">
+            If you’re looking for thoughtful, grounded support for anxiety,
+            trauma, or burnout, therapy may be a place to begin.
           </p>
           <a
-            href="mailto:hello@example.com"
-            className="mt-8 inline-block rounded-full bg-[#344e41] px-8 py-4 text-sm text-white transition hover:bg-[#24392f]"
+            href="mailto:hello@example.com?subject=Therapy%20Inquiry"
+            className="mt-8 inline-block rounded-full bg-[#293b32] px-7 py-4 text-sm text-white hover:bg-[#40594a]"
           >
-            Get in Touch ↗
+            Reach Out to Dr. Maya
           </a>
+          <p className="mt-5 text-xs text-[#73786f]">
+            Replace the example email with the real contact details before launch.
+          </p>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-[#263d35]/15 px-6 py-8">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#68766c] md:flex-row">
-          <p>© 2026 Maya Reynolds Therapy</p>
-          <p>A thoughtful space for wellbeing and personal growth.</p>
-        </div>
+      <footer className="bg-[#293b32] px-5 py-8 text-center text-sm text-white/75">
+        <p className="font-medium text-white">Dr. Maya Reynolds, PsyD</p>
+        <p className="mt-2">Licensed Clinical Psychologist · Santa Monica, California</p>
+        <p className="mt-4 text-xs">This is a fictional therapist profile created for a design assignment.</p>
       </footer>
     </main>
   );
 }
-
